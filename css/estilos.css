@@ -709,6 +709,9 @@ header a:hover {
 
 #bannerNosotros h2{
     color: white;
+    font-family: montserrat;
+    font-family: Montserrat;
+    font-weight: 600;
 }
 
 /* --------Sobre nosotros Conocenos-------- */
@@ -790,6 +793,9 @@ header a:hover {
 
 #bannerRecetas h2{
     color: white;
+    font-family: montserrat;
+    font-family: Montserrat;
+    font-weight: 600;
 }
 
 /* --------Recetas Intro-------- */
@@ -842,6 +848,9 @@ header a:hover {
 
 #bannerProductos h2{
     color: white;
+    font-family: montserrat;
+    font-family: Montserrat;
+    font-weight: 600;
 }
 
 /* --------productos intro-------- */
@@ -959,6 +968,9 @@ header a:hover {
 
 #bannerContacto h2{
     color: white;
+    font-family: montserrat;
+    font-family: Montserrat;
+    font-weight: 600;
 }
 
 
