@@ -172,13 +172,18 @@ main{
         padding-bottom:200px;
     }
 
+    
+#inicioProductos h3 {
+        padding-top: 70px;
+}
+
     #nuestraHistoria{
         margin-bottom: 10px;
         margin-left: 20px;
         margin-right: 20px;
         padding-left: 15px;
         padding-right: 15px;
-        padding-top: 30px;
+        padding-top: 50px;
         padding-bottom: 30px;
         text-decoration: none;
         background-color:white;
@@ -306,6 +311,11 @@ main{
         padding-top:200px;
         padding-bottom:200px;
     }
+
+    #inicioProductos h3 {
+        padding-top: 70px;
+}
+
     #nuestraHistoria{
         margin-bottom: 10px;
         margin-left: 20px;
@@ -601,6 +611,7 @@ header a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    align-content: center;
     text-align: center;
     padding: 50px;
 }
