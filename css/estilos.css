@@ -401,6 +401,8 @@ main{
     #visitanos iframe{
         padding-top:20px;
     }
+
+    }
 }
 
 
@@ -467,10 +469,12 @@ header a{
     line-height: 25px;
     font-family: montserrat;
     font-weight: 500;
+    transition-duration: 0.4s;
 }
 
 header a:hover {
     color: white;
+    transform: scale(1.2,1.2);
 }
 
 #menu{
@@ -515,7 +519,7 @@ header a:hover {
 
 
 #inicioRecetas{
-    padding-top: 80px;
+    padding-top: 40px;
     padding-bottom: 80px;
     text-align: center;
     text-decoration: none;
@@ -872,13 +876,19 @@ header a:hover {
     padding-top: 30px;
     padding-bottom: 30px;
     width: 300px;
-    height: 420px;
+    height: 350px;
+    overflow: hidden;
     display: inline-block;
     text-decoration: none;
     background-color: white;
     text-align: center;
+    transition-duration: 0.4s;
 }
 
+.producto:hover{
+    width: 350px;
+    height: 450px;
+}
 
 .producto img{
     width: 200px;
@@ -892,7 +902,7 @@ header a:hover {
 }
 
 .producto p{
-    padding-bottom:10px;
+    padding-bottom:25px;
 
 }
 
