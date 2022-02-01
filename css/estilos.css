@@ -1,0 +1,1035 @@
+@charset "utf-8";
+
+*{box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body{
+    background-color: #F3D7D6;
+    text-decoration: none;
+    text-align: center;
+}
+    
+
+main{
+    max-width: 1455px;
+    margin: auto;
+
+    /*grid main index*/
+    display: grid;
+    grid-template-areas:
+    "banner"
+    "recetas"
+    "productos" 
+    "contacto"
+    "bannernosotros"
+    "nosotros"
+    "historia"
+    "bannerrecetas"
+    "introrecetas"
+    "masrecetas"
+    "bannerproductos"
+    "introproductos"
+    "listaproductos"
+    "productosaviso"
+    "bannercontacto"
+    "contactanos";
+    
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-template-rows:auto;
+ 
+}
+ 
+ #banner{
+    grid-area: banner;
+ }
+ #inicioRecetas{
+    grid-area: recetas;
+ }
+ #iniciocontacto{
+    grid-area: contacto;
+ }
+ #inicioProductos{
+    grid-area: productos;
+}
+
+#bannerNosotros{
+   grid-area: bannernosotros;
+}
+
+#sobreNosotros{
+    grid-area: nosotros;
+}
+
+#nuestraHistoria{
+   grid-area: historia;  
+}
+
+
+#introRecetas{
+    grid-area: introrecetas;  
+}
+
+#bannerRecetas{
+    grid-area: bannerrecetas;  
+ }
+
+#masRecetas{
+    grid-area: masrecetas;  
+ }
+
+#bannerProductos{
+    grid-area: bannerproductos;  
+ }
+
+#introProductos{
+    grid-area: introproductos;  
+ }
+
+#listaProductos{
+    grid-area: listaproductos;  
+ }
+
+#productosAviso{
+    grid-area:productosaviso;
+}
+
+#bannerContacto{
+    grid-area: bannercontacto;  
+ }
+
+#contactanos{
+    grid-area: contactanos;  
+ }
+
+
+
+
+
+
+/*desktop*/
+
+@media only screen and (min-width: 1024px){
+    main{display: grid;
+        grid-template-areas:
+        "banner banner"
+        "recetas recetas"
+        "productos contacto"
+        "bannernosotros bannernosotros"
+        "nosotros nosotros"
+        "historia historia"
+        "bannerrecetas bannerrecetas"
+        "introrecetas introrecetas"
+        "masrecetas masrecetas"
+        "bannerproductos bannerproductos"
+        "introproductos introproductos"
+        "listaproductos listaproductos"
+        "productosaviso productosaviso"
+        "bannercontacto bannercontacto"
+        "contactanos contactanos";
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 10px;
+        grid-template-rows:auto;
+
+    }
+
+    header{
+        background-color: #F3D7D6;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        overflow: hidden;
+        padding: 20px 10px;
+    }
+    
+    header img{
+        display: block;
+        max-width: 80%;
+        padding-left: 20px;
+    }
+    
+    header a{
+        float: left;
+        color: #155E53;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 15px;
+        line-height: 25px;
+        font-family: montserrat;
+        font-weight: 500;
+    }
+
+    #inicioProductos{
+        background-image: url("../Imagenes/productosbanner.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding-top:200px;
+        padding-bottom:200px;
+    }
+
+    #nuestraHistoria{
+        margin-bottom: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-decoration: none;
+        background-color:white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    #nuestraHistoria img{
+        width:100%;
+    }
+
+    #nuestraHistoria div{
+        width: 50%;
+    }
+    
+    #nuestraHistoria p{
+        padding: 10px;
+    }
+    
+    #nuestraHistoria h2{
+        padding: 10px;
+    }
+    #contactanos{
+        margin-top:40px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-decoration: none;
+        background-color:white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    #contactanos img{
+        padding-bottom:20px;
+    }
+    
+    #contactanos div{
+        width: 50%;
+    }
+    
+    #contactanos p{
+        color: black;
+        font-size: 12pt;
+        font-weight: 600;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    #contactanos h2{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    #contacto label{
+        font-family: Montserrat;
+        color:black;
+        font-weight: 400;
+    }
+    
+    #contacto div{
+        font-family: Montserrat;
+        color:black;
+        font-weight: 400;
+    }
+    
+    
+    #visitanos{
+        padding: 30px;
+    }
+
+    
+    #visitanos ul li {
+        list-style: none;
+        font-family: Montserrat;
+        font-size:12pt;
+        font-weight:400;
+        color: black;
+    }
+    
+    #visitanos iframe{
+        padding-top:20px;
+        max-width: 500px;
+    }
+}
+
+
+/*tablet*/
+@media only screen and (min-width: 768px){
+    main{display: grid;
+        grid-template-areas:
+        "banner banner"
+        "recetas recetas"
+        "productos contacto"
+        "bannernosotros bannernosotros"
+        "nosotros nosotros"
+        "historia historia"
+        "bannerrecetas bannerrecetas"
+        "introrecetas introrecetas"
+        "masrecetas masrecetas"
+        "bannerproductos bannerproductos"
+        "introproductos introproductos"
+        "listaproductos listaproductos"
+        "productosaviso productosaviso"
+        "bannercontacto bannercontacto"
+        "contactanos contactanos";
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 10px;
+        grid-template-rows:auto;
+
+    }
+
+    #inicioProductos{
+        background-image: url("../Imagenes/productosbanner.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding-top:200px;
+        padding-bottom:200px;
+    }
+    #nuestraHistoria{
+        margin-bottom: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-decoration: none;
+        background-color:white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #nuestraHistoria img{
+        width:500px;
+    }
+    
+    #nuestraHistoria div{
+        width: 50%;
+    }
+    
+    #nuestraHistoria p{
+        padding: 10px;
+    }
+    
+    #nuestraHistoria h2{
+        padding: 10px;
+    }
+    #contactanos{
+        margin-top:40px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-decoration: none;
+        background-color:white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    #contactanos img{
+        padding-bottom:20px;
+    }
+    
+    #contactanos div{
+        width: 50%;
+    }
+    
+    #contactanos p{
+        color: black;
+        font-size: 12pt;
+        font-weight: 600;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    #contactanos h2{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    #contacto label{
+        font-family: Montserrat;
+        color:black;
+        font-weight: 400;
+    }
+    
+    #contacto div{
+        font-family: Montserrat;
+        color:black;
+        font-weight: 400;
+    }
+    
+    
+    #visitanos{
+        padding: 30px;
+    }
+    
+    #visitanos ul li {
+        list-style: none;
+        font-family: Montserrat;
+        font-size:12pt;
+        font-weight:400;
+        color: black;
+    }
+    
+    #visitanos iframe{
+        padding-top:20px;
+    }
+}
+
+
+h2{
+    color: black;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size :30pt;
+}
+
+h3{
+    color:#EE8886;
+    font-family : Montserrat;
+    font-size: 15pt;
+}
+
+p{
+    font-family: Montserrat;
+    font-size:12pt;
+    font-weight:400;
+    color: black;
+}
+
+.boton{
+    background-color:#155E53;
+    padding: 10px;
+    width: 200px;
+    height: 50px ;
+    margin-top: 10px;
+    border: none; 
+    transition-duration: 0.4s;
+}
+
+.boton a{
+    text-decoration: none;
+    font-family : Montserrat;
+    color: white;
+    font-size: 15px;
+}
+
+.boton:hover{
+    background-color:#EE8886;
+}
+
+/* --------HEADER-------- */
+
+header{
+    background-color: #F3D7D6;
+    overflow: hidden;
+    padding: 20px 10px;
+}
+
+header img{
+    max-width: 200px;
+    text-align: center;
+}
+
+header a{
+    color: #155E53;
+    padding: 20px;
+    padding-top: 30px;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 25px;
+    font-family: montserrat;
+    font-weight: 500;
+}
+
+header a:hover {
+    color: white;
+}
+
+#menu{
+    padding-top: 12px;
+}
+
+
+/* --------INICIO-------- */
+
+/* --------Inicio nosotros-------- */
+
+.textoprimero{
+    background-image: url("../Imagenes/iniciobanner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top:200px;
+    padding-bottom:200px;
+}
+
+.textoprimero p{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size :15pt;
+    color: white; 
+    padding:20px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.textoprimero h2 {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size :30pt;
+    color: white;
+}
+
+
+
+/* --------Inicio Recetas-------- */
+
+
+#inicioRecetas{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    text-decoration: none;
+    align-content: center;
+    
+}
+
+#inicioRecetas h2{
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size :28pt;
+    padding: 5px; 
+}
+
+#inicioRecetas h3{
+    padding: 5px; 
+}
+
+#inicioRecetas img{
+    padding-top: 10px;
+    padding-bottom: 5;
+}
+
+.receta{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 300px;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #EE8886;
+    transition-duration: 0.4s;
+}
+
+.receta a{
+    font-family: montserrat;
+    font-weight: 600;
+    color:black;
+    text-decoration: none;
+}
+
+.receta img{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+
+.receta:hover{
+    color: white;
+    background-color: #EE8886;
+}
+
+
+
+/* --------Inicio Productos-------- */
+
+#inicioProductos h2{
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size :28pt;
+    padding: 5px; 
+    color:white;
+    align-content: center;
+}
+
+#inicioProductos h3{
+    padding: 5px; 
+
+}
+
+#inicioProductos{
+    background-image: url("../Imagenes/productosbanner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 50px;
+}
+
+#inicioProductos p{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size :15pt;
+    color: white; 
+    padding:20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    
+}
+
+#inicioProductos img{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.inicioProductos{
+    background-image: url("../Imagenes/productosbanner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+ 
+}
+
+
+/* --------Inicio Contacto-------- */
+
+#iniciocontacto{
+    margin: auto;
+    max-width: 500px;
+    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: 14pt;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#iniciocontacto p{
+    text-align: center;
+    color: black;
+    font-size: 14pt;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#iniciocontacto article{
+    text-align: center;
+
+}
+
+#iniciocontacto label{
+    text-justify: left;
+    text-align:left;
+    font-size: 12pt;
+
+}
+
+.cajacontacto{
+    border: 2px solid #EE8886;
+    padding: 5px;
+    width: 300px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+
+}
+
+.reset { 
+    text-decoration: underline;
+    font-family: Montserrat;
+    font-weight: 600;
+    color:#EE8886;
+    border:none;
+    background-color:#F3D7D6;
+}
+
+/* --------SOBRE NOSOTROS-------- */
+
+/* --------Sobre nosotros banner-------- */
+
+#bannerNosotros{
+    background-image: url("../Imagenes/pasteleríafoto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px;
+    color: white;
+}
+
+#bannerNosotros h2{
+    color: white;
+}
+
+/* --------Sobre nosotros Conocenos-------- */
+
+#sobreNosotros{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    text-decoration: none;
+    align-content: center;
+}
+
+#sobreNosotros h2{
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size :28pt;
+    padding: 5px; 
+}
+
+#sobreNosotros h3{
+    padding: 5px; 
+    align-content: center;
+}
+
+#sobreNosotros p{
+    padding-left:20px;
+    padding-right: 20px;
+}
+
+#sobreNosotros img{
+    padding-bottom: 20px;
+}
+
+/* --------Sobre nosotros NuestraHistoria-------- */
+
+#nuestraHistoria{
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-decoration: none;
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#nuestraHistoria img{
+    width:310px;
+    align-content: center;
+}
+
+#nuestraHistoria p{
+    padding: 10px;
+}
+
+#nuestraHistoria h2{
+    padding: 10px;
+}
+
+
+
+/* -------- RECETAS-------- */
+
+/* --------Recetas banner-------- */
+
+#bannerRecetas{
+    background-image: url("../Imagenes/recetasbanner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px;
+    color: white;
+}
+
+#bannerRecetas h2{
+    color: white;
+}
+
+/* --------Recetas Intro-------- */
+
+#introRecetas{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    align-content: center;
+}
+
+#introRecetas h2{
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size :28pt;
+    padding: 5px; 
+}
+
+#introRecetas h3{
+    padding: 5px; 
+    align-content: center;
+}
+
+#introRecetas p{
+    padding-left:20px;
+    padding-right: 20px;
+}
+
+#introRecetas img{
+    padding-bottom: 10px;
+}
+
+
+
+/* --------PRODUCTOS-------- */
+
+/* --------productos banner-------- */
+
+#bannerProductos{
+    background-image: url("../Imagenes/productosbanner2.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    align-content: center;
+    padding: 100px;
+    color: white;
+}
+
+#bannerProductos h2{
+    color: white;
+}
+
+/* --------productos intro-------- */
+
+
+#introProductos h2{
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size :28pt;
+    padding: 5px; 
+}
+
+#introProductos h3{
+    padding: 5px; 
+    align-content: center;
+}
+
+#introProductos p{
+    padding-left:20px;
+    padding-right: 20px;
+}
+
+#introProductos img{
+    padding-bottom: 10px;
+}
+
+#introProductos{
+    padding-bottom:20px;
+    padding-top: 40px;
+
+}
+
+/* --------productos lista-------- */
+
+
+.producto{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 300px;
+    height: 420px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    text-align: center;
+}
+
+
+.producto img{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.producto h3{
+    padding-bottom:10px;
+}
+
+.producto p{
+    padding-bottom:10px;
+
+}
+
+/* --------productos aviso-------- */
+
+#productosAviso{
+    margin-top: 20px;;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-decoration: none;
+    background-color:#EE8886;
+    text-align: center;
+    
+     
+}
+
+#productosAviso h3{
+    text-decoration: none;
+    color:black;
+    text-align: center;
+    text-align: center;
+}
+
+
+/* --------CONTACTO-------- */
+
+/* --------Contacto banner-------- */
+
+#bannerContacto{
+    background-image: url("../Imagenes/bannercontacto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px;
+    color: white;
+}
+
+#bannerContacto h2{
+    color: white;
+}
+
+
+/* --------Contacto Contactanos/visitamos-------- */
+
+#contactanos{
+    margin-top:40px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#contactanos img{
+    padding-bottom:20px;
+}
+
+
+#contactanos p{
+    color: black;
+    font-size: 12pt;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#contactanos h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#contacto label{
+    font-family: Montserrat;
+    color:black;
+    font-weight: 400;
+}
+
+#contacto div{
+    font-family: Montserrat;
+    color:black;
+    font-weight: 400;
+}
+
+#contactanos iframe{
+    max-width: 310px;
+}
+
+#visitanos ul li {
+    list-style: none;
+    font-family: Montserrat;
+    font-size:12pt;
+    font-weight:400;
+    color: black;
+}
+
+#visitanos iframe{
+    padding-top:20px;
+}
+
+
+
+
+/* --------FOOTER-------- */
+
+footer{
+    background-color: #EE8886;
+    align-content: center;
+    text-align: center;
+    margin-top: 2em;
+    padding-top: 10px;
+    padding-bottom: 1em;
+}
+
+
+
+#aviso p{
+    font-family: Montserrat;
+    font-size: 8pt;
+    direction: flex;
+    text-align: center;
+    padding-top: 1em;
+    align-content: center;
+}
+
+   
+
+

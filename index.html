@@ -1,0 +1,124 @@
+<!Doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUCRÉE- Pastelería</title>
+
+    <!-- CSS-->
+    <link  rel="stylesheet" href="css/estilos.css" type="text/css">
+    
+    <!-- tipografias-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Prata&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+     <!-- inicio de header --> 
+    <header>
+        <img src="imagenes/logo.png" alt="logo">
+        <div id="menu">
+                <a href="index.html">INICIO</a></li>
+                <a href="paginas/sobrenosotros.html">NOSOTROS</a></li>
+                <a href="paginas/recetas.html">RECETAS</a></li>
+                <a href="paginas/productos.html">PRODUCTOS</a></li>
+                <a href="paginas/contacto.html">CONTACTO</a></li>
+          </div>
+      
+    </header>
+
+     <!-- inicio de main --> 
+    <main>
+        <section id="banner">
+            <div class="textoprimero">
+            <h2>PASTELERIA DE OTRO MUNDO</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores numquam sunt magni.</p>
+            <button class="boton" type="button"> <a href="PAGINAS/sobrenosotros.html" id="massobrenosotros">SOBRE NOSOTROS</a></button>
+            </div>
+        </section>
+    
+        <section id="inicioRecetas">
+            <div class="recetasTexto">
+            <h3>Compartimos nuestras mejores recetas!</h3>
+            <h2>RECETAS</h2>
+            <img src="Imagenes/miscelanea.png" alt="miscelanea">
+            </div> 
+            <div class="recetasContenido">
+                    <div class="receta">
+                    <img src="Imagenes/budindebanana.JPG" alt="budindebanana"><br>
+                    <a href="https://www.recetasgratis.net/receta-de-budin-de-banana-71339.html">BUDÍN DE BANANA Y CHOCOLATE</a>
+                    </div>
+                    <div class="receta">
+                    <img src="Imagenes/chocotorta.JPG" alt="chocotorta"><br>
+                    <a href="https://www.recetasgratis.net/receta-de-chocotorta-argentina-55640.html">CHOCOTORTA ESPECIAL HELADA</a>
+                    </div>
+                    <div class="receta">
+                    <img src="imagenes/tartadefrutillas.jpg" alt="tartadefrutillas"><br>
+                    <a href="https://www.recetasgratis.net/receta-de-tarta-de-frutillas-44024.html">TARTA DE FRUTILLAS Y PASTELERA</a>
+                    </div>
+                    <div class="receta">
+                    <img src="imagenes/galletitasconchips.jpg" alt="galletitasconchips"><br>
+                    <a href="https://www.recetasgratis.net/receta-de-cookies-con-pepitas-de-chocolate-faciles-58830.html">GALLETITAS CON CHIPS DE CHOCOLATE</a>
+                    </div>
+            </div>
+            <div>
+                <button class="boton" type="button"> <a href="paginas/recetas.html" id="recetas">RECETAS</a></button>
+            </div>
+            </section>
+
+            <section id="inicioProductos">
+                <h3>Productos de otro mundo!</h3>
+                <h2>NUESTROS PRODUCTOS</h2>
+                <img src="Imagenes/miscelanea.png" alt="miscelanea">
+                <p>Revisá toda nuestra variedad de productos y enviamnos un mensaje para hacer tu pedido!</p>
+                <button class="boton" type="button"> <a href="paginas/productos.html" id="productos">PRODUCTOS</a></button>
+            </section>
+            
+            <section id="iniciocontacto">
+                <p>ENVIANOS UN MENSAJE Y CONTANOS LO QUE QUIERAS!</p>
+                <article>
+                    <form action="#">
+                            <label for="nombre">Nombre:</label><br>
+                            <input class="cajacontacto" type="nombre" placeholder="Ej.: María"><br>
+                            <label for="apellido">Apellido:</label><br>
+                            <input class="cajacontacto" type="apellido" placeholder="Ej.:Romano"><br>
+                            <label for="email">Email:</label><br>
+                            <input class="cajacontacto" type="email" placeholder="Ej.:abcde@gmail.com" name="email"><br>
+                            <label for="mensaje">Cual es la razón del mensaje?</label><br>
+                            <select class="cajacontacto" name="letra" id="letra"> 
+                                    <option value="x">Hacer un pedido</option>
+                                    <option value="y">Consulta sobre recetas</option>
+                                    <option value="z">Consulta particular</option>
+                            </select><br>
+                            <label for="mensaje">Mensaje:</label> <br>
+                            <textarea class="cajacontacto" placeholder="Contanos con que te podemos ayudar!"></textarea><br>
+                            
+                            <div>Quiero recibir información! <input type="checkbox" name="acepta" value="1"></div><br>
+                            <input class="boton" type="button" value="ENVIAR"><br>    
+                            <input class="reset" type="Reset" value="RESETEAR">                    
+                    </form>
+                </article>
+            </section>
+           
+    </main>
+
+     <!-- inicio de footer --> 
+     <footer>
+        <section id="footerRedes">
+            <a title="Instagram" href="https://www.instagram.com"><img src="Imagenes/instagram.png" alt="redessociales"></a>
+            <a title="Facebook" href="https://www.facebook.com"><img src="Imagenes/facebook.png"  alt="redessociales"></a>
+            <a title="Whatsapp" href="https://web.whatsapp.com"><img src="Imagenes/whatsapp.png" alt="redessociales"></a>
+            <a title="Email" href="https://www.gmail.com" ><img src="Imagenes/mail.png"  alt="redessociales"></a>
+        </section>
+    
+        <div id="aviso">
+            <p>©SUCRÉE 2019-2021 | Todos los derechos reservados. Ninguna imágen o contenido puese ser usado sin permiso. Diseñado por LS.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
