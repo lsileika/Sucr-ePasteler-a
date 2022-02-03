@@ -7,7 +7,10 @@
     <title>SUCRÉE- Pastelería</title>
 
     <!-- Bootstrap-->
-    <link rel="stylesheet" href="../bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/css/bootstrap.css" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/css/bootstrap.css" >
 
     <!-- CSS-->
     <link  rel="stylesheet" href="../css/estilos.css" type="text/css">
@@ -23,15 +26,23 @@
 
     <!-- inicio de header --> 
     <header>
-        <img src="../Imagenes/logo.png" alt="logo">
-        <div id="menu">
-                <a href="../index.html">INICIO</a></li>
-                <a href="./sobrenosotros.html">NOSOTROS</a></li>
-                <a href="./recetas.html">RECETAS</a></li>
-                <a href="./productos.html">PRODUCTOS</a></li>
-                <a href="./contacto.html">CONTACTO</a></li>
-          </div>
-      
+
+        <nav class="navbar navbar-expand-md navbar-light navbar-right">
+            <a class="navbar-brand" href="../index.html"><img src="../Imagenes/logo.png"  alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-stretch" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="../index.html">INICIO</a>
+                <a class="nav-item nav-link" href="./sobrenosotros.html">NOSOTROS</a>  
+                <a class="nav-item nav-link" href="./recetas.html">RECETAS</a> 
+                <a class="nav-item nav-link" href="./productos.html">PRODUCTOS</a>
+                 <a class="nav-item nav-link" href="./contacto.html">CONTACTO</a>
+              </div>
+            </div>
+        </nav>
+          
     </header>
 
 
@@ -142,14 +153,14 @@
 
     <!-- inicio de footer --> 
     <footer>
-        <section id="footerRedes">
+        <section id="footerRedes" class="container-fluid">
             <a title="Instagram" href="https://www.instagram.com"><img src="../Imagenes/instagram.png" alt="redessociales"></a>
             <a title="Facebook" href="https://www.facebook.com"><img src="../Imagenes/facebook.png"  alt="redessociales"></a>
             <a title="Whatsapp" href="https://web.whatsapp.com"><img src="../Imagenes/whatsapp.png" alt="redessociales"></a>
             <a title="Email" href="https://www.gmail.com" ><img src="../Imagenes/mail.png"  alt="redessociales"></a>
         </section>
     
-        <div id="aviso">
+        <div id="aviso" class="container-fluid">
             <p>©SUCRÉE 2019-2021 | Todos los derechos reservados. Ninguna imágen o contenido puese ser usado sin permiso. Diseñado por LS.</p>
         </div>
     </footer>
