@@ -15,8 +15,12 @@ body{
 main{
     max-width: 1455px;
     margin: auto;
+}
 
-    /*grid main index*/
+
+/*----GRID main index----
+
+
     display: grid;
     grid-template-areas:
     "banner"
@@ -104,12 +108,12 @@ main{
     grid-area: contactanos;  
  }
 
+*/
 
 
 
 
-
-/*desktop*/
+/*----MEDIA QUERIES desktop----
 
 @media only screen and (min-width: 1024px){
     main{display: grid;
@@ -277,7 +281,8 @@ main{
 }
 
 
-/*tablet*/
+/*----tablet----
+
 @media only screen and (min-width: 768px){
     main{display: grid;
         grid-template-areas:
@@ -413,6 +418,8 @@ main{
     }
 
 }
+
+*/
 
 
 h2{
@@ -595,7 +602,7 @@ header a:hover {
     font-family: Montserrat;
     font-weight: 600;
     font-size :28pt;
-    padding: 5px; 
+
     color:white;
     align-content: center;
 }
@@ -736,13 +743,14 @@ header a:hover {
 }
 
 #sobreNosotros p{
-    padding-left:20px;
-    padding-right: 20px;
+    padding-top: 10px;
 }
 
 #sobreNosotros img{
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
+
+
 
 /* --------Sobre nosotros NuestraHistoria-------- */
 
@@ -756,13 +764,9 @@ header a:hover {
     padding-bottom: 30px;
     text-decoration: none;
     background-color:white;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 #nuestraHistoria img{
-    width:310px;
     align-content: center;
 }
 
@@ -986,9 +990,7 @@ header a:hover {
     padding-bottom: 10px;
     text-decoration: none;
     background-color:white;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+
 }
 
 #contactanos img{
@@ -1021,9 +1023,6 @@ header a:hover {
     font-weight: 400;
 }
 
-#contactanos iframe{
-    max-width: 310px;
-}
 
 #visitanos ul li {
     list-style: none;
