@@ -467,8 +467,6 @@ p{
 
 header{
     background-color: #F3D7D6;
-    overflow: hidden;
-    padding: 20px 10px;
 }
 
 header img{
@@ -478,11 +476,7 @@ header img{
 
 header a{
     color: #155E53;
-    padding: 10px;
-    padding-top: 10px;
     text-decoration: none;
-    font-size: 15px;
-    line-height: 25px;
     font-family: montserrat;
     font-weight: 500;
     transition-duration: 0.4s;
@@ -491,10 +485,6 @@ header a{
 header a:hover {
     color: white;
     transform: scale(1.2,1.2);
-}
-
-#menu{
-    padding-top: 12px;
 }
 
 
@@ -649,19 +639,12 @@ header a:hover {
 /* --------Inicio Contacto-------- */
 
 #iniciocontacto{
-    margin: auto;
-    max-width: 500px;
     font-family: Montserrat;
-    display: flex;
-    flex-direction: column;
     color: black;
     font-size: 14pt;
-    padding-top: 80px;
-    padding-bottom: 80px;
 }
 
 #iniciocontacto p{
-    text-align: center;
     color: black;
     font-size: 14pt;
     font-weight: 600;
@@ -669,31 +652,32 @@ header a:hover {
     padding-bottom: 20px;
 }
 
+#iniciocontacto label{
+    font-size: 12pt;
+
+}
+
+
 #iniciocontacto article{
     text-align: center;
 
 }
 
-#iniciocontacto label{
-    text-justify: left;
-    text-align:left;
-    font-size: 12pt;
+.cajacontacto{
+    border: 2px solid #EE8886;
 
 }
 
-.cajacontacto{
-    border: 2px solid #EE8886;
-    padding: 5px;
-    width: 300px;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-
+.boton{
+    color: white;
+    font-size: 15px;
 }
 
 .reset { 
     text-decoration: underline;
     font-family: Montserrat;
     font-weight: 600;
+    font-size: 15px;
     color:#EE8886;
     border:none;
     background-color:#F3D7D6;

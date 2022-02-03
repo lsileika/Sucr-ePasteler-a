@@ -23,20 +23,34 @@
     
      <!-- inicio de header --> 
     <header>
-        <img src="Imagenes/logo.png" alt="logo">
-        <div id="menu">
-                <a href="index.html">INICIO</a></li>
-                <a href="paginas/sobrenosotros.html">NOSOTROS</a></li>
-                <a href="paginas/recetas.html">RECETAS</a></li>
-                <a href="paginas/productos.html">PRODUCTOS</a></li>
-                <a href="paginas/contacto.html">CONTACTO</a></li>
-        </div>
+        <div id="menu" class="container">
+            <nav>
+            <img src="Imagenes/logo.png" alt="logo">
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+            <a class="nav-link" href="index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="paginas/sobrenosotros.html">NOSOTROS</a>  
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="paginas/recetas.html">RECETAS</a> 
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="paginas/productos.html">PRODUCTOS</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="paginas/contacto.html">CONTACTO</a>
+            </li>
+        </ul>
+
+        </nav>
       
     </header>
 
      <!-- inicio de main --> 
     <main>
-        <section id="banner"  class="container-fluid">
+        <section id="banner" class="container-fluid">
             <div class="textoprimero">
             <h2>PASTELERIA DE OTRO MUNDO</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores numquam sunt magni.</p>
@@ -44,7 +58,7 @@
             </div>
         </section>
     
-        <section id="inicioRecetas"  class="container-fluid">
+        <section id="inicioRecetas" class="container-fluid">
             <div class="recetasTexto">
             <h3>Compartimos nuestras mejores recetas!</h3>
             <h2>RECETAS</h2>
@@ -52,19 +66,19 @@
             </div> 
             <div class="recetasContenido">
                     <div class="receta">
-                    <img src="Imagenes/budindebanana.JPG" alt="budindebanana"><br>
+                    <img class="img-fluid" src="Imagenes/budindebanana.JPG" alt="budindebanana"><br>
                     <a href="https://www.recetasgratis.net/receta-de-budin-de-banana-71339.html">BUDÍN DE BANANA Y CHOCOLATE</a>
                     </div>
                     <div class="receta">
-                    <img src="Imagenes/chocotorta.JPG" alt="chocotorta"><br>
+                    <img class="img-fluid" src="Imagenes/chocotorta.JPG" alt="chocotorta"><br>
                     <a href="https://www.recetasgratis.net/receta-de-chocotorta-argentina-55640.html">CHOCOTORTA ESPECIAL HELADA</a>
                     </div>
                     <div class="receta">
-                    <img src="Imagenes/tartadefrutillas.jpg" alt="tartadefrutillas"><br>
+                    <img class="img-fluid" src="Imagenes/tartadefrutillas.jpg" alt="tartadefrutillas"><br>
                     <a href="https://www.recetasgratis.net/receta-de-tarta-de-frutillas-44024.html">TARTA DE FRUTILLAS Y PASTELERA</a>
                     </div>
                     <div class="receta">
-                    <img src="Imagenes/galletitasconchips.jpg" alt="galletitasconchips"><br>
+                    <img class="img-fluid" src="Imagenes/galletitasconchips.jpg" alt="galletitasconchips"><br>
                     <a href="https://www.recetasgratis.net/receta-de-cookies-con-pepitas-de-chocolate-faciles-58830.html">GALLETITAS CON CHIPS DE CHOCOLATE</a>
                     </div>
             </div>
@@ -73,33 +87,41 @@
             </div>
             </section>
 
-            <div class="container-fluid row">
-            <section id="inicioProductos" class="col">
+            <section class="container-fluid row">
+            <div id="inicioProductos" class="col">
                 <h3>Productos de otro mundo!</h3>
                 <h2>NUESTROS PRODUCTOS</h2>
                 <img src="Imagenes/miscelanea.png" alt="miscelanea">
                 <p>Revisá toda nuestra variedad de productos y enviamnos un mensaje para hacer tu pedido!</p>
                 <button class="boton" type="button"> <a href="paginas/productos.html" id="productos">PRODUCTOS</a></button>
-            </section>
+            </div>
             
             <div id="iniciocontacto" class="col">
                 <p>ENVIANOS UN MENSAJE Y CONTANOS LO QUE QUIERAS!</p>
-                <article>
+                <article class="container">
                     <form action="#">
-                            <label for="nombre">Nombre:</label><br>
-                            <input class="cajacontacto" type="nombre" placeholder="Ej.: María"><br>
-                            <label for="apellido">Apellido:</label><br>
-                            <input class="cajacontacto" type="apellido" placeholder="Ej.:Romano"><br>
-                            <label for="email">Email:</label><br>
-                            <input class="cajacontacto" type="email" placeholder="Ej.:abcde@gmail.com" name="email"><br>
-                            <label for="mensaje">Cual es la razón del mensaje?</label><br>
-                            <select class="cajacontacto" name="letra" id="letra"> 
+                            <div class="form-group">
+                            <label class="cajatexto" for="nombre">Nombre:</label>
+                            <input class="cajacontacto form-control" type="nombre" placeholder="Ej.: María">
+                            </div>
+                            <div class="form-group">
+                            <label class="cajatexto" for="apellido">Apellido:</label>
+                            <input class="cajacontacto form-control" type="apellido" placeholder="Ej.:Romano">
+                            </div>
+                            <div class="form-group">
+                            <label class="cajatexto" for="email">Email:</label>
+                            <input class="cajacontacto form-control" type="email" placeholder="Ej.:abcde@gmail.com" name="email"><br>
+                            </div>
+                            <div class="form-group">
+                            <label class="cajatexto" for="mensaje">Cual es la razón del mensaje?</label>
+                            <select class="cajacontacto form-control" name="letra" id="letra"> 
                                     <option value="x">Hacer un pedido</option>
                                     <option value="y">Consulta sobre recetas</option>
                                     <option value="z">Consulta particular</option>
                             </select><br>
-                            <label for="mensaje">Mensaje:</label> <br>
-                            <textarea class="cajacontacto" placeholder="Contanos con que te podemos ayudar!"></textarea><br>
+                            </div>
+                            <label class="cajatexto" for="mensaje">Mensaje:</label>
+                            <textarea class="cajacontacto form-control" placeholder="Contanos con que te podemos ayudar!"></textarea><br>
                             
                             <div>Quiero recibir información! <input type="checkbox" name="acepta" value="1"></div><br>
                             <input class="boton" type="button" value="ENVIAR"><br>    
@@ -107,7 +129,6 @@
                     </form>
                 </article>
             </section>
-            </div>
            
     </main>
 
