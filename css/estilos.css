@@ -473,8 +473,8 @@ p{
 
 header{
     background-color: #F3D7D6;
-    padding-left:20px;
-    padding-right:20px;
+    padding-left:30px;
+    padding-right:30px;
 }
 
 .navbar{
@@ -486,7 +486,7 @@ header img{
     text-align: center;
 }
 
-header a{
+.nav-item{
     color: #155E53;
     text-decoration: none;
     font-family: montserrat;
@@ -494,9 +494,9 @@ header a{
     transition-duration: 0.4s;
 }
 
-header a:hover {
+.nav-item:hover {
     color: white;
-    transform: scale(1.2,1.2);
+    transform: scale(1.1,1.1);
 }
 
 
@@ -665,7 +665,7 @@ header a:hover {
     font-size: 14pt;
     font-weight: 600;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     
 }
 
@@ -697,7 +697,7 @@ header a:hover {
     font-size: 15px;
     color:#EE8886;
     border:none;
-    background-color:#F3D7D6;
+    background-color:nose;
 }
 
 
@@ -767,6 +767,13 @@ header a:hover {
 
 #nuestraHistoria img{
     align-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.imagenHistoria{
+    max-height:500px;
+    overflow:hidden;
 }
 
 #nuestraHistoria p{
@@ -897,7 +904,7 @@ header a:hover {
     padding-top: 30px;
     padding-bottom: 30px;
     width: 300px;
-    height: 350px;
+    height: 370px;
     overflow: hidden;
     display: inline-block;
     text-decoration: none;
@@ -1027,6 +1034,7 @@ iframe{
     min-height: 300px;
     overflow-y: hidden;
     overflow-x: visible;
+    padding-bottom: 40px;
 }
 
 
