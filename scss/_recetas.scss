@@ -1,0 +1,52 @@
+@import "variables";
+
+/* --------Recetas banner-------- */
+
+#bannerRecetas{
+    background-image: url("../Imagenes/recetasbanner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top:100px;
+    padding-bottom:100px;
+
+    h2{
+        color: $blanco;
+        font-family: $montserrat;
+        font-weight: 600;
+    }
+}
+
+
+/* --------Recetas Intro-------- */
+
+#introRecetas{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    align-content: center;
+
+    h2{
+        font-family: $montserrat;
+        font-weight: 600;
+        font-size :28pt;
+        padding: 5px; 
+    }
+
+    h3{
+        padding: 5px; 
+        align-content: center;
+    }
+
+    p{
+        padding-left:20px;
+        padding-right: 20px;
+    }
+
+    img{
+        padding-bottom: 10px;
+    }
+    
+}

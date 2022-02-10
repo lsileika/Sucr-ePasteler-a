@@ -1,0 +1,130 @@
+ //IMPORTS//
+
+ @import "inicio";
+ @import "sobrenosotros";
+ @import "recetas";
+ @import "productos";
+ @import "contacto";
+ @import "variables";
+
+
+//LAYOUT//
+
+*{box-sizing: border-box;
+    margin: 0;
+    padding:0;
+
+Body{
+    background-color: $paletafondo;
+    text-decoration: none;
+    text-align: center;
+
+    header{
+        background-color: $paletafondo;
+        padding-left:30px;
+        padding-right:30px;
+
+        nav{
+            background-color:  $paletafondo;
+
+            img{
+                max-width: 190px;
+                text-align: center;
+            }
+
+            a{
+                color: $paletaverde;
+                text-decoration: none;
+                font-family: $montserrat;
+                font-weight: 500;
+                transition-duration: 0.4s;
+            
+                &:hover{
+                    color: $blanco;
+                    transform: scale(1.1,1.1);
+                }
+            }
+        }
+    }
+
+
+    main{
+        max-width: 1455px;
+        margin: auto;
+
+        .container-fluid{
+            margin:0;
+            }
+        
+        
+        h2{
+            color: $negro;
+            font-family: $montserrat;
+            font-weight: 600;
+            font-size :30pt;
+        }
+        
+        h3{
+            color:$paletarosa;
+            font-family : $montserrat;
+            font-size: 15pt;
+        }
+        
+        p{
+            font-family: $montserrat;
+            font-size:12pt;
+            font-weight:400;
+            color: $negro;
+        }
+        
+        .boton{
+            background-color:$paletaverde;
+            padding: 10px;
+            width: 200px;
+            height: 50px ;
+            margin-top: 10px;
+            border: none; 
+            transition-duration: 0.4s;
+        }
+        
+        .boton a{
+            text-decoration: none;
+            font-family : $montserrat;
+            color: $blanco;
+            font-size: 15px;
+        }
+        
+        .boton:hover{
+            background-color:$paletarosa;
+        }
+    }
+
+
+    footer{
+        background-color: $paletarosa;
+        align-content: center;
+        text-align: center;
+        margin-top: 2em;
+        padding-top: 10px;
+        padding-bottom: 1em;
+        
+        #aviso p{
+            font-family: $montserrat;
+            font-size: 10pt;
+            direction: flex;
+            text-align: center;
+            padding-top: 1em;
+            align-content: center;
+        }
+
+    }
+
+}
+    
+}
+
+
+
+
+    
+

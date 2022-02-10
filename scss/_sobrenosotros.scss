@@ -1,0 +1,82 @@
+@import "variables";
+
+/* --------Sobre nosotros banner-------- */
+
+#bannerNosotros{
+    background-image: url("../Imagenes/pasteleríafoto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top:100px;
+    padding-bottom:100px;
+
+    h2{
+        color: $blanco;
+        font-family: $montserrat;
+        font-weight: 600;
+    }
+}
+
+/* --------Sobre nosotros Conocenos-------- */
+
+#sobreNosotros{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    text-decoration: none;
+    align-content: center;
+
+    h2{
+        font-family: $montserrat;
+        font-weight: 600;
+        font-size :28pt;
+        padding: 5px; 
+    }
+
+    h3{
+        padding: 5px; 
+        align-content: center;
+    }
+
+    p{
+        padding-top: 10px;
+    }
+
+    img{
+        padding-bottom: 10px;
+    }
+}
+
+/* --------Sobre nosotros NuestraHistoria-------- */
+
+#nuestraHistoria{
+    margin:0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-decoration: none;
+    background-color:$blanco;
+
+    img{
+        align-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .imagenHistoria{
+        max-height:500px;
+        overflow:hidden;
+    }
+
+    p{
+        padding: 10px;
+    }
+
+    h2{
+        padding: 10px;
+    }
+    
+}
+

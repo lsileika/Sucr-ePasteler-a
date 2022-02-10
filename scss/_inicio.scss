@@ -1,0 +1,189 @@
+
+ @import "variables";
+
+// --------Inicio nosotros-------- //
+
+.textoprimero{
+    background-image: url("../Imagenes/iniciobanner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top:200px;
+    padding-bottom:200px;
+
+    h2 {
+        font-family: $montserrat;
+        font-weight: 600;
+        font-size :30pt;
+        color: $blanco;
+    }
+
+    p{
+        font-family: $montserrat;
+        font-weight: 400;
+        font-size :15pt;
+        color: $blanco; 
+        padding:$padding;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    
+}
+
+
+/* --------Inicio Recetas-------- */
+
+
+#inicioRecetas{
+    padding-top: 40px;
+    padding-bottom: 80px;
+    text-align: center;
+    text-decoration: none;
+    align-content: center;
+
+    h2{
+        font-family: $montserrat;
+        font-weight: 600;
+        font-size :28pt;
+        padding: 5px; 
+    }
+
+    h3{
+        padding: 5px; 
+    }
+
+    .receta{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 300px;
+        display: inline-block;
+        text-decoration: none;
+        border: 2px solid $paletarosa;
+        transition-duration: 0.4s;
+
+        &:hover{
+            color: $blanco;
+            background-color: $paletarosa;
+        }        
+
+        a{
+            font-family: $montserrat;
+            font-weight: 600;
+            color: $negro;
+            text-decoration: none;
+        }
+
+        img{
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+        
+    }
+    
+    
+}
+
+/* --------Inicio Productos-------- */
+
+#inicioProductos{
+    background-image: url("../Imagenes/productosbanner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-content: center;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin:0;
+
+    h2{
+        font-family: $montserrat;
+        font-weight: 600;
+        font-size :28pt;
+        color:$blanco;
+        align-content: center;
+    }
+
+    h3{
+        padding: 5px; 
+    }
+
+    p{
+        font-family: $montserrat;
+        font-weight: 400;
+        font-size :15pt;
+        color: $blanco; 
+        padding:20px;
+        padding-right: 50px;
+        padding-left: 50px;  
+    }
+
+    img{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+}
+
+
+/* --------Inicio Contacto-------- */
+
+#iniciocontacto{
+    font-family: $montserrat;
+    color: $negro;
+    font-size: 14pt;
+    margin:0;
+
+    p{
+        color: $negro;
+        font-size: 14pt;
+        font-weight: 600;
+        padding-top: 20px;
+        padding-bottom: 5px;  
+    }
+
+    label{
+        font-size: 12pt;
+    }
+
+    article{
+        text-align: center;
+
+        .cajacontacto{
+            border: 2px solid $paletarosa;
+        
+        }
+
+        .boton{
+            color: $blanco;
+            font-size: 15px;
+        }
+
+        .reset { 
+            text-decoration: underline;
+            font-family: $montserrat;
+            font-weight: 600;
+            font-size: 15px;
+            color: $paletarosa;
+            border:none;
+            background-color:nose;
+        }
+        
+    
+    }
+    
+}
+
+
+
+
+
+
