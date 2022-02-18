@@ -1,7 +1,9 @@
 
  @import "variables";
 
-// --------Inicio nosotros-------- //
+ /*------------INICIO-------------*/
+ 
+/* --------Inicio nosotros--------*/
 
 .textoprimero{
     background-image: url("../Imagenes/iniciobanner.png");
@@ -13,10 +15,8 @@
     padding-bottom:200px;
 
     h2 {
-        font-family: $montserrat;
-        font-weight: 600;
+        @include type-banner;
         font-size :30pt;
-        color: $blanco;
     }
 
     p{

@@ -1,16 +1,13 @@
 @import "variables";
 
+/*---------RECETAS-------------*/
+
+
 /* --------Recetas banner-------- */
 
 #bannerRecetas{
     background-image: url("../Imagenes/recetasbanner.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding-top:100px;
-    padding-bottom:100px;
-
+    @extend .banner;
     h2{
         color: $blanco;
         font-family: $montserrat;

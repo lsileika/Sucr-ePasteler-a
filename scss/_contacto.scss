@@ -1,20 +1,17 @@
 @import "variables";
 
+/*------------CONTACTO--------------*/
+
+
 /* --------Contacto banner-------- */
 
 #bannerContacto{
     background-image: url("../Imagenes/bannercontacto.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding-top:100px;
-    padding-bottom:100px;
+    @extend .banner;
 
     h2{
-        color: $blanco;
-        font-family: $montserrat;
-        font-weight: 600;
+        @include type-banner;
+
     }
 }
 
@@ -62,4 +59,3 @@
     }
 
 }
-

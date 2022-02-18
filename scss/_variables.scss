@@ -14,3 +14,19 @@ $montserrat:Montserrat;
 //MEDIDAS//
 
 $padding: 20px;
+
+//MIXIN//
+
+@mixin type-banner{
+    color: $blanco;
+    font-family: $montserrat;
+    font-weight: 600;
+    }
+
+
+    
+
+
+
+
+

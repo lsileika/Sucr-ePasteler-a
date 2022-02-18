@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*------------INICIO-------------*/
+/* --------Inicio nosotros--------*/
 .textoprimero {
   background-image: url("../Imagenes/iniciobanner.png");
   background-repeat: no-repeat;
@@ -8,10 +10,10 @@
   padding-top: 200px;
   padding-bottom: 200px; }
   .textoprimero h2 {
+    color: white;
     font-family: Montserrat;
     font-weight: 600;
-    font-size: 30pt;
-    color: white; }
+    font-size: 30pt; }
   .textoprimero p {
     font-family: Montserrat;
     font-weight: 400;
@@ -123,15 +125,18 @@
       border: none;
       background-color: nose; }
 
+/*-----------SOBRE NOSOTROS------------*/
 /* --------Sobre nosotros banner-------- */
-#bannerNosotros {
-  background-image: url("../Imagenes/pasteleríafoto.jpg");
+.banner, #bannerNosotros, #bannerRecetas, #bannerProductos, #bannerContacto {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px; }
+
+#bannerNosotros {
+  background-image: url("../Imagenes/pasteleríafoto.jpg"); }
   #bannerNosotros h2 {
     color: white;
     font-family: Montserrat;
@@ -178,15 +183,10 @@
   #nuestraHistoria h2 {
     padding: 10px; }
 
+/*---------RECETAS-------------*/
 /* --------Recetas banner-------- */
 #bannerRecetas {
-  background-image: url("../Imagenes/recetasbanner.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px; }
+  background-image: url("../Imagenes/recetasbanner.jpg"); }
   #bannerRecetas h2 {
     color: white;
     font-family: Montserrat;
@@ -213,15 +213,10 @@
   #introRecetas img {
     padding-bottom: 10px; }
 
+/*-------------PRODUCTOS-------------*/
 /* --------productos banner-------- */
 #bannerProductos {
-  background-image: url("../Imagenes/productosbanner2.JPG");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px; }
+  background-image: url("../Imagenes/productosbanner2.JPG"); }
   #bannerProductos h2 {
     color: white;
     font-family: Montserrat;
@@ -292,15 +287,10 @@
     text-align: center;
     text-align: center; }
 
+/*------------CONTACTO--------------*/
 /* --------Contacto banner-------- */
 #bannerContacto {
-  background-image: url("../Imagenes/bannercontacto.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px; }
+  background-image: url("../Imagenes/bannercontacto.jpg"); }
   #bannerContacto h2 {
     color: white;
     font-family: Montserrat;
@@ -404,7 +394,23 @@
       text-align: center;
       margin-top: 2em;
       padding-top: 10px;
-      padding-bottom: 1em; }
+      padding-bottom: 1em;
+      /*---------MAPS-----------*/
+      /*-----------------------*/ }
+      * Body footer img {
+        margin: 5px; }
+      * Body footer .instagram:hover {
+        border: 5px solid #125688;
+        border-radius: 100px; }
+      * Body footer .facebook:hover {
+        border: 5px solid #3b5998;
+        border-radius: 100px; }
+      * Body footer .whatsapp:hover {
+        border: 5px solid #4dc247;
+        border-radius: 100px; }
+      * Body footer .mail:hover {
+        border: 5px solid #cb3234;
+        border-radius: 100px; }
       * Body footer #aviso p {
         font-family: Montserrat;
         font-size: 10pt;
