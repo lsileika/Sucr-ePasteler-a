@@ -5,7 +5,7 @@
  
 /* --------Inicio nosotros--------*/
 
-.textoprimero{
+.textoPrimero{
     background-image: url("../Imagenes/iniciobanner.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -136,7 +136,7 @@
 
 /* --------Inicio Contacto-------- */
 
-#iniciocontacto{
+#inicioContacto{
     font-family: $montserrat;
     color: $negro;
     font-size: 14pt;
@@ -157,7 +157,7 @@
     article{
         text-align: center;
 
-        .cajacontacto{
+        .cajaContacto{
             border: 2px solid $paletarosa;
         
         }
@@ -174,7 +174,8 @@
             font-size: 15px;
             color: $paletarosa;
             border:none;
-            background-color:nose;
+            background-color:none;
+
         }
         
     
