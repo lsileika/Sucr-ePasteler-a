@@ -108,28 +108,6 @@ Body{
         padding-top: 10px;
         padding-bottom: 1em;
 
-        img{
-            margin: 5px;
-
-        }
-
-        /*---------MAPS-----------*/
-
-        $botonredes:(
-            instagram: #125688,
-            facebook: #3b5998,
-            whatsapp: #4dc247, 
-            mail: #cb3234,
-            );
-
-        @each $name-color, $colores in $botonredes{
-        .#{$name-color}:hover{
-        border: 5px solid $colores;
-        border-radius: 100px;
-        }
-        }
-
-         /*-----------------------*/
         
         #aviso p{
             font-family: $montserrat;

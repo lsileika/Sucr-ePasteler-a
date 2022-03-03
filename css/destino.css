@@ -394,23 +394,7 @@
       text-align: center;
       margin-top: 2em;
       padding-top: 10px;
-      padding-bottom: 1em;
-      /*---------MAPS-----------*/
-      /*-----------------------*/ }
-      * Body footer img {
-        margin: 5px; }
-      * Body footer .instagram:hover {
-        border: 5px solid #125688;
-        border-radius: 100px; }
-      * Body footer .facebook:hover {
-        border: 5px solid #3b5998;
-        border-radius: 100px; }
-      * Body footer .whatsapp:hover {
-        border: 5px solid #4dc247;
-        border-radius: 100px; }
-      * Body footer .mail:hover {
-        border: 5px solid #cb3234;
-        border-radius: 100px; }
+      padding-bottom: 1em; }
       * Body footer #aviso p {
         font-family: Montserrat;
         font-size: 10pt;
