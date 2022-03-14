@@ -213,6 +213,33 @@
   #introRecetas img {
     padding-bottom: 10px; }
 
+#masRecetas .receta {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 300px;
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid #EE8886;
+  transition-duration: 0.4s; }
+  #masRecetas .receta:hover {
+    color: white;
+    background-color: #EE8886; }
+  #masRecetas .receta a {
+    font-family: Montserrat;
+    font-weight: 600;
+    color: black;
+    text-decoration: none; }
+  #masRecetas .receta img {
+    width: 200px;
+    height: 200px;
+    overflow: hidden; }
+
 /*-------------PRODUCTOS-------------*/
 /* --------productos banner-------- */
 #bannerProductos {
